@@ -1,0 +1,42 @@
+/* LG - SMALL LAPTOPS : 1024PX - 1280PX */
+
+@media (max-width: 72rem) {
+    html{
+        font-size:56.25%;
+    }
+
+    .contact-section{
+        margin-bottom: 20rem;
+    }
+}
+
+@media (max-width: 51rem) {
+        html{
+            font-size: 50%;
+        }
+}
+
+@media (max-width:43rem ){
+        html{
+            font-size:43.75% ;
+        }
+
+        .contact-card{
+            padding: 8rem 16rem;
+
+        }
+
+        .middle-section{
+            margin-bottom:20rem ;
+        }
+} 
+
+@media (max-width:34rem){
+    html{
+        font-size: 37.5%;
+    }
+
+    .hero-section{
+        height: auto;
+    }
+}

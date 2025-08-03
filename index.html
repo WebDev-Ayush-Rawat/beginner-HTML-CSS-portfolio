@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>MY portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <!-- NAVIGATION -->
+
+        <nav class="navbar">
+          <img
+            src="images/logo.svg.svg"
+            alt="logo"
+            width="100px"
+            height="100px"
+          /><br />
+          <ul class="nav-button-container">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- HERO-SECTION -->
+
+        <section class="hero-section">
+          <h1 class="hero-heading">
+            Hi, i am
+            <span class="highlight highlight-primary">Ayush rawat</span>
+          </h1>
+          <p class="hero-paragraph">
+            Aspiring
+            <span class="highlight highlight-tertiary"
+              >Full Stack Web Developer </span
+            >from India
+          </p>
+          <ul class="hero-btn-container">
+            <li>
+              <a href="/mywork.html" class="btn btn-primary">Explore my work</a>
+            </li>
+            <li>
+              <a href="#about" class="btn btn-primary-outline">More about me</a>
+            </li>
+          </ul>
+        </section>
+      </header>
+
+      <main>
+        <section class="middle-section">
+          <section id="about" class="about">
+            <h2 class="middle-section-heading">About me</h2>
+            <img width="100px" src="/images/myphoto.svg" alt="photo of ayush" />
+            <p>
+              Hello! I am Ayush Rawat, a
+              <u> self-taught developer</u> passionate about building modern ,
+              responsive website . I started my journey in web development in
+              2025 with a vision to become a top-notch full stack developer
+            </p>
+            <p>
+              In my free time, I enjoy solving programming challenges, helping
+              students, and working on personal projects. I believe
+              <em>learning never stops</em> and challenges are what make the
+              journey exciting.
+            </p>
+            <blockquote>
+              "Code is like humor. When you have to explain it, it’s bad."
+            </blockquote>
+          </section>
+
+          <section id="skills" class="skills">
+            <h2 class="middle-section-heading">Skills</h2>
+            <ul>
+              <li><p>HTML5 - Semantic and Structured layouts</p></li>
+              <li><p>Git &amp; Github - Version Controls</p></li>
+              <li><p>Markdown - Clean Documentation</p></li>
+              <li><p>Terminal - Basic CLI usage</p></li>
+              <li><p>Planning - Task management with notion</p></li>
+            </ul>
+          </section>
+
+          <section id="projects" class="projects-section">
+            <h2 class="middle-section-heading">Projects</h2>
+            <div class="projects-section-flexbox-container">
+              <div class="flex-items">
+                <img
+                  class="middle-section-image"
+                  src="/images/project_1.svg"
+                  alt="personal portfloio webiste image"
+                />
+                <p>
+                  Personal Portfolio Website- My first personal portfolio built
+                  with pure HTML . Simple , clean and semantic.
+                </p>
+              </div>
+
+              <div class="flex-items">
+                <img
+                  class="middle-section-image"
+                  src="/images/project_2.svg"
+                  alt=" blog page image"
+                />
+                <p>
+                  Blog page- A static HTML blog layout with article previews and
+                  proper content structure
+                </p>
+              </div>
+
+              <div class="flex-items">
+                <img
+                  class="middle-section-image"
+                  src="/images/project_3.svg"
+                  alt="landing page image"
+                />
+                <p>
+                  landing page-A product focused HTML only landing page
+                  showcasing headline , features and CTA
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <hr />
+
+        <section class="contact-section">
+          <div class="contact-card">
+            <h2>Contact me</h2>
+            <form action="/api/contact" method="post">
+              <label for="name">Enter your name</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="e.g. John Bernier"
+                minlength="10"
+                required
+              /><br />
+
+              <label for="email">Enter your Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="e.g. John@gmail.com"
+                min="3"
+                required
+              /><br />
+
+              <label for="telephone">Enter your phone no.</label>
+              <input
+                id="telephone"
+                type="tel"
+                name="telephone"
+                placeholder="e.g. 999 555 11138"
+                min="10"
+              /><br />
+
+              <label for="reason">Reason for Contact:</label>
+              <textarea
+                name="reason"
+                id="reason"
+                rows="5"
+                cols="20"
+                maxlength="255"
+              ></textarea
+              ><br />
+
+              <button
+                type="submit"
+                class="btn btn-primary contact-submit-button"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Connect with me</p>
+        <ul class="footer-social-icons">
+          <li>
+            <a href="https://www.instagram.com/ayush_aspires/"
+              ><img
+                src="/images/logo-instagram.svg"
+                alt="instagram logo"
+                width="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@ayush_aspires"
+              ><img
+                src="/images/logo-youtube.svg"
+                alt=" youtube logo"
+                width="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/ayush-rawat-b0719a375/"
+              ><img
+                src="/images/logo-linkedin.svg"
+                alt="linked in logo"
+                width="20px"
+            /></a>
+          </li>
+        </ul>
+
+        <p class="small-text">Made by Ayush &copy; 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
